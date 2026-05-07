@@ -1,0 +1,612 @@
+
+.topo {
+    position: relative;
+    text-align: center;
+    background-color: rgb(29, 134, 75);
+    color: beige;
+    padding: 15px;
+    border-radius: 15px;
+    background-image:url(../imagens/PedroTSI.png);
+    background-size: cover;
+    background-position: center;
+}
+.banner {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #146d14, #00cc66); /*degrade para a direita*/
+    color: beige;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: rgb(235, 20, 20);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold; /*fonte em negrito*/
+    color: black;
+}
+.btn:hover{
+    background-color: rgba(107, 107, 107, 0.7);
+}
+.ads {
+        list-style-type: none; /* Remove os pontos */
+        padding: 0;            /* Remove o recuo interno */
+        margin: 0;             /* Remove a margem externa */    
+}
+
+.ads a {
+    color: rgb(216, 215, 215);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.ads a:hover {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+ul li{
+    display:flex;
+    margin-right: 10px;
+    font-size: 24px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+.ads {
+    background-color: rgba(0,0,0,0.1); /*deixa o fundo do link mais transparente*/
+    padding: 10px 15px;
+    color: beige;
+    text-decoration: none; /*nenhuma decoração*/
+    transition: 0.3s; /*deixa a animação acontecer suavimente*/
+  }
+a:hover{
+    background-color: rgba(0,0,0,0.7); /*quando passar o mouse em cima o botão fica claro*/
+}
+.perfil{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /*evita ditorcer a foto*/
+    border: 3px solid #e2fff0;
+}
+.grid{
+    display: flex; /*coloca os itens lado a lado*/
+    gap: 30px; /*espaço entre cada foto*/
+    justify-content: center; /*centraliza tudo*/
+    flex-wrap: wrap; /*quebra linhase não couber na tela*/
+    
+}
+article{
+    text-align: center;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+.pedro{
+    margin-top: 30px;
+    background: #00cc66;
+    border-radius: 15px;
+    color: beige;
+}
+.subtitulo{
+    font-size: 25px;
+}
+.link-fundo-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Fica acima da imagem, mas abaixo do texto */
+}
+/* 3. Garante que os textos e o menu fiquem NA FRENTE do link */
+.topo h1, 
+.topo .subtitulo, 
+.topo .ads {
+    position: relative;
+    z-index: 2; /* Maior que o do link-fundo */}
+/* =========================================
+   SOBRE O EVENTO
+========================================= */
+
+/* Caixa principal da seção "Sobre o Evento" */
+#sobre{
+
+    /* largura da caixa */
+    width: 85%;
+
+    /* centraliza horizontalmente */
+    margin: 40px auto;
+
+    /* cor de fundo */
+    background: white;
+
+    /* espaçamento interno */
+    padding: 40px;
+
+    /* arredondamento das bordas */
+    border-radius: 25px;
+
+    /* sombra da caixa */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    /* centraliza os textos */
+    text-align: center;
+}
+
+/* Título da seção */
+#sobre h2{
+
+    /* tamanho da fonte */
+    font-size: 38px;
+
+    /* cor do texto */
+    color: #009966;
+
+    /* espaço abaixo do título */
+    margin-bottom: 20px;
+}
+
+/* Parágrafo da seção */
+#sobre p{
+
+    /* tamanho da fonte */
+    font-size: 20px;
+
+    /* cor do texto */
+    color: #444;
+
+    /* espaçamento entre linhas */
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   PROGRAMA
+========================================= */
+
+/* Caixa principal da programação */
+#programa{
+
+    /* largura da caixa */
+    width: 85%;
+
+    /* centralização */
+    margin: 40px auto;
+
+    /* fundo branco */
+    background: white;
+
+    /* espaçamento interno */
+    padding: 40px;
+
+    /* bordas arredondadas */
+    border-radius: 25px;
+
+    /* sombra */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    /* centraliza textos */
+    text-align: center;
+}
+
+/* Título da programação */
+#programa h2{
+
+    /* tamanho do texto */
+    font-size: 38px;
+
+    /* cor */
+    color: #009966;
+
+    /* espaço abaixo */
+    margin-bottom: 30px;
+}
+
+/* Lista UL da programação */
+#programa ul{
+
+    /* remove bolinhas da lista */
+    list-style: none;
+
+    /* remove padding padrão */
+    padding: 0;
+
+    /* ativa flexbox */
+    display: flex;
+
+    /* centraliza horizontalmente */
+    justify-content: center;
+
+    /* espaço entre os cards */
+    gap: 25px;
+
+    /* quebra linha no celular */
+    flex-wrap: wrap;
+}
+
+/* Cada item da lista */
+#programa li{
+
+    /* fundo do card */
+    background: #10af45;
+
+    /* espaçamento interno */
+    padding: 20px;
+
+    /* bordas arredondadas */
+    border-radius: 18px;
+
+    /* largura fixa */
+    width: 220px;
+
+    /* tamanho da fonte */
+    font-size: 18px;
+
+    /* deixa texto mais forte */
+    font-weight: bold;
+
+    /* sombra */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+    /* suaviza animações */
+    transition: 0.3s;
+}
+
+/* Efeito ao passar mouse */
+#programa li:hover{
+
+    /* sobe o card */
+    transform: translateY(-8px);
+
+    /* muda fundo */
+    background: #009966;
+
+    /* muda cor do texto */
+    color: white;
+}
+
+
+/* =========================================
+   PALESTRANTES
+========================================= */
+
+/* Caixa principal da seção */
+#palestrantes{
+
+    /* largura */
+    width: 90%;
+
+    /* centraliza */
+    margin: 60px auto;
+
+    /* centraliza textos */
+    text-align: center;
+}
+
+/* Título dos palestrantes */
+#palestrantes h2{
+
+    /* tamanho */
+    font-size: 38px;
+
+    /* cor */
+    color: #009966;
+
+    /* espaço inferior */
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   GRID DOS PALESTRANTES
+========================================= */
+
+/* Container dos cards */
+.grid{
+
+    /* ativa flexbox */
+    display: flex;
+
+    /* centraliza os cards */
+    justify-content: center;
+
+    /* espaço entre cards */
+    gap: 35px;
+
+    /* quebra linha */
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   CARD INDIVIDUAL
+========================================= */
+
+/* Cada article vira um card */
+.grid article{
+
+    /* largura do card */
+    width: 260px;
+
+    /* fundo branco */
+    background: white;
+
+    /* espaçamento interno */
+    padding: 30px;
+
+    /* bordas arredondadas */
+    border-radius: 25px;
+
+    /* sombra */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    /* suaviza animações */
+    transition: 0.3s;
+}
+
+/* Hover do card */
+.grid article:hover{
+
+    /* levanta o card */
+    transform: translateY(-10px);
+}
+
+
+/* =========================================
+   IMAGENS DOS PALESTRANTES
+========================================= */
+
+/* Classe das imagens */
+.perfil{
+
+    /* largura */
+    width: 140px;
+
+    /* altura */
+    height: 140px;
+
+    /* evita deformar imagem */
+    object-fit: cover;
+
+    /* deixa redonda */
+    border-radius: 50%;
+
+    /* margem superior/inferior */
+    margin: 20px 0;
+}
+
+
+/* =========================================
+   TEXTOS DOS CARDS
+========================================= */
+
+/* Nome do palestrante */
+.grid h3{
+
+    /* cor */
+    color: #009966;
+
+    /* espaço inferior */
+    margin-bottom: 15px;
+
+    /* tamanho */
+    font-size: 24px;
+}
+
+/* Descrição */
+.grid p{
+
+    /* cor */
+    color: #555;
+
+    /* espaçamento entre linhas */
+    line-height: 1.5;
+
+    /* tamanho */
+    font-size: 17px;
+}
+
+
+/* =========================================
+   ESPAÇAMENTO GERAL ENTRE SEÇÕES
+========================================= */
+
+/* Div que envolve as seções */
+.pedro{
+
+    /* organiza em coluna */
+    display: flex;
+
+    /* direção vertical */
+    flex-direction: column;
+
+    /* espaço entre sections */
+    gap: 40px;
+}
+/* =========================================
+   SEÇÃO DE INSCRIÇÃO
+========================================= */
+
+/* Caixa principal da inscrição */
+#inscricao{
+
+    /* largura da section */
+    width: 85%;
+
+    /* centraliza na tela */
+    margin: 60px auto;
+
+    /* fundo branco */
+    background: white;
+
+    /* espaçamento interno */
+    padding: 50px;
+
+    /* bordas arredondadas */
+    border-radius: 25px;
+
+    /* sombra suave */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    /* centraliza textos */
+    text-align: center;
+}
+
+
+/* =========================================
+   TÍTULO DA INSCRIÇÃO
+========================================= */
+
+#inscricao h2{
+
+    /* tamanho da fonte */
+    font-size: 38px;
+
+    /* cor verde */
+    color: #009966;
+
+    /* espaço abaixo */
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   TEXTO DA INSCRIÇÃO
+========================================= */
+
+#inscricao p{
+
+    /* tamanho do texto */
+    font-size: 18px;
+
+    /* cor */
+    color: #555;
+
+    /* espaço inferior */
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   FORMULÁRIO
+========================================= */
+
+#inscricao form{
+
+    /* largura máxima */
+    max-width: 400px;
+
+    /* centraliza formulário */
+    margin: auto;
+
+    /* organiza elementos em coluna */
+    display: flex;
+
+    flex-direction: column;
+
+    /* espaço entre inputs */
+    gap: 20px;
+}
+
+
+/* =========================================
+   INPUTS
+========================================= */
+
+#inscricao input{
+
+    /* espaçamento interno */
+    padding: 15px;
+
+    /* remove borda padrão */
+    border: none;
+
+    /* fundo cinza claro */
+    background: #f5f5f5;
+
+    /* arredondamento */
+    border-radius: 12px;
+
+    /* tamanho da fonte */
+    font-size: 16px;
+
+    /* transição suave */
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   EFEITO AO CLICAR NO INPUT
+========================================= */
+
+#inscricao input:focus{
+
+    /* remove borda azul padrão */
+    outline: none;
+
+    /* sombra verde */
+    box-shadow: 0 0 10px rgba(0,153,102,0.4);
+
+    /* fundo branco */
+    background: white;
+}
+
+
+/* =========================================
+   BOTÃO
+========================================= */
+
+#inscricao .btn{
+
+    /* fundo vermelho */
+    background: #e63946;
+
+    /* cor do texto */
+    color: white;
+
+    /* remove borda */
+    border: none;
+
+    /* espaçamento interno */
+    padding: 15px;
+
+    /* bordas arredondadas */
+    border-radius: 12px;
+
+    /* tamanho da fonte */
+    font-size: 18px;
+
+    /* cursor de clique */
+    cursor: pointer;
+
+    /* animação suave */
+    transition: 0.3s;
+}
+
+
+/* =========================================
+   HOVER DO BOTÃO
+========================================= */
+
+#inscricao .btn:hover{
+
+    /* botão sobe levemente */
+    transform: translateY(-5px);
+
+    /* vermelho mais escuro */
+    background: #c1121f;
+}
